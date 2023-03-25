@@ -11,17 +11,23 @@
 <body>
     <div class="main-container">
         <div class="main-container2">
-            <img src="141987377_10224288702342961_7806565816681631766_n_2.jpg" alt="AU" width="200px">
+            <img src="141987377_10224288702342961_7806565816681631766_n_2.jpg" alt="AU" width="150px">
             <div class="header">Coder's Career Path Newsletter</div>
             <div class="form-container">
                 <div class="signup-message">Signup to watch the FREE video webinar, and to join my coder/developer's newsletter:</div>
-                <div contenteditable="True">Your Name *</div>
-                <div contenteditable="True">Your Email *</div>
+                <div id="namefield" class="textfield" contenteditable="True" onclick="document.getElementById('namefield').innerHTML=''">Your Name *</div>
+                <div id="emailfield" class="textfield" contenteditable="True" onclick="document.getElementById('emailfield').innerHTML=''">Your Email *</div>
                 <button class="signup-button">Sign me up!</button>
             </div>
             <div class="footer">©  2023 Anant Upadhyay - www.uncleau.com</div>
         </div>
     </div>
+
+    <!-- <script>
+        function cleartext() {
+            document.getElementById('namefield').innerHTML = ''
+        }
+    </script> -->
 </body>
 </html>
 
